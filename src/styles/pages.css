@@ -1,0 +1,347 @@
+/* -------------------- General -------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* -------------------- Hero Section -------------------- */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #007acc;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* -------------------- CTA Buttons -------------------- */
+.cta-button {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-button.primary {
+  background-color: #007acc;
+  color: #fff;
+}
+
+.cta-button.primary:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background-color: #f0f4f8;
+  color: #007acc;
+  border: 2px solid #007acc;
+}
+
+.cta-button.secondary:hover {
+  background-color: #007acc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* -------------------- Universal Cards Grid -------------------- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* -------------------- Card Styling -------------------- */
+.card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.course-card.unavailable {
+  opacity: 0.6;
+}
+
+.not-available {
+  color: red;
+  font-weight: bold;
+}
+
+/* -------------------- Pages -------------------- */
+.courses-preview,
+.courses-page,
+.testimonials-page,
+.pricing-page {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.courses-preview h2,
+.courses-page h1,
+.testimonials-page h1,
+.pricing-page h1 {
+  color: #007acc;
+  margin-bottom: 2rem;
+}
+
+.courses-page p,
+.pricing-page p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-buttons button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background: #007acc;
+  color: white;
+  border-color: #005fa3;
+}
+
+/* -------------------- Signup Form -------------------- */
+.signup-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.signup-form input,
+.signup-form select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #005fa3;
+}
+
+.signup-success {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  background: #f0f8ff;
+}
+
+/* -------------------- FAQ Page -------------------- */
+.faq-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.faq-page h1 {
+  color: #007acc;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  color: #005fa3;
+}
+
+.faq-question:hover {
+  color: #007acc;
+}
+
+.faq-answer {
+  padding: 0.5rem 0 1rem 1rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* -------------------- Testimonials -------------------- */
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #005fa3;
+}
+
+/* -------------------- Header -------------------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #007acc;
+  color: white;
+}
+
+.site-header .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #ffdd57;
+}
+
+/* -------------------- Footer -------------------- */
+.site-footer {
+  background-color: #007acc;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.site-footer .footer-links {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  transition: color 0.2s;
+}
+
+.site-footer .footer-links a:hover {
+  color: #ffdd57;
+}
+
+.site-footer .footer-contact,
+.site-footer .footer-copy {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
+/* -------------------- Mobile Responsiveness -------------------- */
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
